@@ -1,2 +1,9 @@
-<h1>CalenderEvents#show</h1>
-<p>Find me in app/views/calender_events/show.html.erb</p>
+<ul>
+  <li><%= @event.title %></li>
+  <li><%= @event.event_date %></li>
+  <li><%= @event.category %></li>
+  <li><%= @event.place %></li>
+  <li><%= @event.venue %></li>
+  <li><%= @event.cost %></li>
+  <li><%= (@event.details).html_safe %></li>
+</ul>
