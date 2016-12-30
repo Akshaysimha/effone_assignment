@@ -14,9 +14,15 @@ RSpec.describe CalenderEventsController, type: :controller do
 
   describe "GET #show" do
     it "returns http success" do
-      get :show, id: event.id
+      get :show, params: { id: event.id }
       expect(assigns(:event)).to eq(event)
       expect(response).to have_http_status(:success)
+    end
+  end
+
+  describe "GET #update_events" do
+    it "returns http success" do
+      expect { get :update_events, xhr: true }.to change { Event.count }.by_at_least(1)
     end
   end
 
