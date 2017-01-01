@@ -1,6 +1,21 @@
-<h1>CalenderEvents</h1>
-<%= button_to 'Update Events', update_events_path, :method => :get, :remote => true %>
-<div id="event-list">
-  <%= render :partial => "event_list" %>
+<div class="row">
+  <div class="col-md-1">
+  </div>
+  <div class="col-md-11">
+    <h1>CalenderEvents</h1>
+    <%= button_to 'Update Events', update_events_path, :method => :get, :remote => true %>
+    <div id="event-list" class="topbar">
+      <%= render :partial => "event_list" %>
+    </div>
+  </div>
 </div>
-
+<div id="event-show-modal"></div>
+<style>
+.topbar{
+    margin-top: 20px;
+    display:block;
+    width:90%;
+    height:450px;
+    overflow:scroll;
+    }
+</style>

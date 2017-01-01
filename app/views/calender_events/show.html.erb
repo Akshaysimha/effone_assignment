@@ -1,9 +1,15 @@
-<ul>
-  <li><%= @event.title %></li>
-  <li><%= @event.event_date %></li>
-  <li><%= @event.category %></li>
-  <li><%= @event.place %></li>
-  <li><%= @event.venue %></li>
-  <li><%= @event.cost %></li>
-  <li><%= (@event.details).html_safe %></li>
-</ul>
+<div class="row" style="padding-top:50px;">
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <h1><%= @event.title %></h1>
+  <ul>
+    <li><%= @event.event_date %></li>
+    <li><%= @event.category %></li>
+    <li><%= @event.place %></li>
+    <li><%= @event.venue %></li>
+    <li><%= @event.cost %></li>
+    <li><%= (@event.details).html_safe %></li>
+  </ul>
+  </div>
+</div>

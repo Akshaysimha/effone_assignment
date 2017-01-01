@@ -6,6 +6,7 @@ RSpec.describe CalenderEventsController, type: :controller do
 
   describe "GET #index" do
     it "returns http success" do
+      event
       get :index
       expect(response).to have_http_status(:success)
       expect(assigns(:events)).to include(event)

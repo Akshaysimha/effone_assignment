@@ -1,6 +1,6 @@
 class CalenderEventsController < ApplicationController
   def index
-    @events = Event.all
+    @events = Event.all.sort_by &:event_date
   end
 
   def show
@@ -14,6 +14,6 @@ class CalenderEventsController < ApplicationController
         category: h["categories"], place: h["where"]["valueString"], venue: h["venue"],
         cost: h["cost"], details: h["content"])
     end
-    @events = Event.all
+    @events = Event.all.sort_by &:event_date
   end
 end
