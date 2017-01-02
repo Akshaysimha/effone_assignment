@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+  root :to => "calender_events#index"
   resources :calender_events
 
   get "/update_events", :to => 'calender_events#update_events', :as => 'update_events'
