@@ -23,6 +23,8 @@ RSpec.describe CalenderEventsController, type: :controller do
 
   describe "GET #update_events" do
     it "returns http success" do
+      response = File.open('sample_response.xml')
+      stub_request(:get, 'https://www.trumba.com/calendars/smithsonian-events.xml').to_return(:body => response, :status => 200, :headers => {})
       expect { get :update_events, xhr: true }.to change { Event.count }.by_at_least(1)
     end
   end

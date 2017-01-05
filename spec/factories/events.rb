@@ -7,5 +7,6 @@ FactoryGirl.define do
     venue "MyString"
     cost "MyString"
     details "MyText"
+    event_id "Event Id"
   end
 end

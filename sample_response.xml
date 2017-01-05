@@ -1,0 +1,30 @@
+<feed xmlns:openSearch="http://a9.com/-/spec/opensearchrss/1.0/" xmlns:gd="http://schemas.google.com/g/2005" xmlns:x-trumba="http://schemas.trumba.com/atom/x-trumba" xmlns:gc="http://base.google.com/cns/1.0" xmlns="http://www.w3.org/2005/Atom">
+  <entry>
+    <id>1</id>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/g/2005#event"/>
+    <title type="text">Test Title </title>
+    <content type="html">
+      Sample content
+    </content>
+    <gd:where valueString=""/>
+    <gd:when startTime="2017-01-05T14:00:00Z" endTime="2017-01-05T14:45:00Z"/>
+    <gc:eventtype type="number">Smithsonian Event</gc:eventtype>
+    <gc:categories type="string">Gallery Talks and Tours</gc:categories>
+    <gc:venue type="string">Smithsonian Castle</gc:venue>
+    <gc:cost type="string">Free; walk-in</gc:cost>
+  </entry> 
+  <entry>
+    <id>2</id>
+    <category scheme="http://schemas.google.com/g/2005#kind" term="http://schemas.google.com/g/2005#event"/>
+    <title type="text">Test Title 2</title>
+    <content type="html">
+      Sample content
+    </content>
+    <gd:where valueString=""/>
+    <gd:when startTime="2017-01-05T14:00:00Z" endTime="2017-01-05T14:45:00Z"/>
+    <gc:eventtype type="number">Smithsonian Event</gc:eventtype>
+    <gc:categories type="string">Gallery Talks and Tours</gc:categories>
+    <gc:venue type="string">Smithsonian Castle</gc:venue>
+    <gc:cost type="string">Free; walk-in</gc:cost>
+  </entry> 
+</feed>

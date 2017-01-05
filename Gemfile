@@ -40,6 +40,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'rails-controller-testing'
   gem 'simplecov', :require => false
+  gem 'webmock'
 end
 
 group :development do
